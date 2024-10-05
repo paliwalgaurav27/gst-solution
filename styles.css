@@ -1,0 +1,857 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* nav bar*/
+
+/* Navigation Bar Styles */
+.logo {
+    display: flex; /* Use flexbox to align logo and title */
+    align-items: center; /* Vertically center items */
+}
+
+.logo img {
+    margin-right: 10px; /* Adds space between logo and title */
+}
+
+.nav-title {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: rgb(239, 238, 238); /* Font color for the title */
+}
+
+.logo img {
+    max-width: 60px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* hero section*/
+
+/* Hero Section Styles */
+#hero {
+    background: url('img/background1.jpg') no-repeat center center/cover; /* Set background image */
+    height: 80vh; /* Sets the height of the hero section */
+    display: flex; /* Enables flexbox for content alignment */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    color: white; /* Sets text color to white */
+    text-align: center; /* Centers the text */
+    position: relative; /* Ensures positioning context for any absolute children */
+}
+
+/* Content Styles */
+.hero-content {
+    z-index: 1; /* Ensures the text is displayed above the background */
+    padding: 20px; /* Adds padding around the content */
+}
+
+/* Heading Styles */
+.hero-content h1 {
+    font-size: 3rem; /* Adjusts the font size of the heading */
+    margin: 0; /* Removes default margin */
+}
+
+/* Paragraph Styles */
+.hero-content p {
+    font-size: 1.5rem; /* Adjusts the font size of the paragraph */
+    margin: 10px 0; /* Adds vertical margin for spacing */
+}
+
+/* Button Styles */
+.hero-btn {
+    padding: 10px 20px; /* Adds padding around the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Removes underline from link */
+    border-radius: 5px; /* Rounds the corners of the button */
+}
+
+/* Button Hover Effect */
+.hero-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Hero Content Text Color */
+.hero-content {
+    color: #FFFFFF; /* Change this to any color code from above */
+    z-index: 1; /* Ensures the text is displayed above the background */
+    padding: 20px; /* Adds padding around the content */
+}
+
+/* Hero Content Styles */
+.hero-content {
+    position: absolute; /* Position content absolutely within the hero section */
+    top: 10px; /* Move content closer to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset for perfect centering */
+    text-align: center; /* Center text */
+    color: white; /* White text color for visibility */
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Our Services Section */
+#our-services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#our-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+/* Container for the services button */
+.services-button-container {
+    text-align: center; /* Centers the button within the container */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+/* Styles for the "View All Our Services" button */
+.view-all-services-btn {
+    display: inline-block; /* Allows padding and margin */
+    padding: 12px 24px; /* Adds vertical and horizontal padding */
+    background-color: #28a745; /* Sets the background color (green) */
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px; /* Rounds the corners of the button */
+    font-size: 1.2rem; /* Sets the font size for readability */
+    transition: background-color 0.3s ease; /* Adds a transition effect */
+}
+
+/* Hover effect for the button */
+.view-all-services-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #bdc3c7;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.testimonial-card h4 {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex-basis: 30%;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin-bottom: 10px;
+}
+
+.footer-left ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-center p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 20px;
+}
+
+/* Services Hero Section */
+.services-hero {
+    background-color: #1abc9c;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-hero .hero-content h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.services-hero .hero-content p {
+    font-size: 1.5em;
+    color: #ecf0f1;
+}
+
+/* Detailed Services Section */
+
+/* Content Styles for Services Heading */
+.services-heading {
+    z-index: 1; /* Ensures the heading is displayed above other content */
+    padding: 20px; /* Adds padding around the heading */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Adds margin for space above and below the heading */
+    font-size: 2em; /* Increases font size for prominence */
+    font-weight: bold; /* Makes the heading bold */
+}
+
+
+
+.detailed-services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.detailed-services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    width: 250px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.service-item p {
+    color: #7f8c8d;
+}
+
+
+
+/*<!--service page -->*/
+
+/* Styles for the "Our Core Services" heading */
+.services-heading {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 10px; /* Space below the navbar */
+    font-size: 2.5rem; /* Increased font size for visibility */
+    font-weight: bold;
+    color: #333; /* Text color */
+}
+
+/* Ensure that the container is centered and has proper spacing */
+.detailed-services .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Adjust padding for spacing */
+}
+
+/* Padding for the entire section */
+.detailed-services {
+    padding-top: 40px; /* Reduced space between navbar and section */
+}
+
+/* Service Section Styles */
+.services {
+    padding: 20px 0; /* Reduced padding to minimize space */
+    text-align: center; /* Center content */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+}
+
+/* Service Card Styles */
+.service-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.service-card img {
+    max-width: 100%; /* Responsive image size */
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.service-card h3 {
+    font-size: 1.5em; /* Size of card headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.service-card p {
+    color: #555; /* Text color for paragraph */
+    font-size: 1em; /* Paragraph text size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}
+
+/* Detailed Services Section Styles */
+.detailed-services {
+    padding: 20px 0; /* Reduced padding for top and bottom */
+}
+
+/* Ensure that the container is centered and has proper spacing */
+.detailed-services .container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Heading Styles */
+.services-heading {
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove extra margin */
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Adjust the color */
+}
+/* Call Us Now Box Styles */
+.call-us-box {
+    background-color: #719e6e; /* Background color for the box */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin: 40px 0; /* Space around the box */
+    font-size: 1.5rem; /* Adjust font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.call-us-box a {
+    color: #fff; /* Link color inside the box */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.call-us-box:hover {
+    background-color: #0f7b3a; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarges the box on hover */
+}
+
+.call-us-box p {
+    margin: 0;
+}
+
+
+.call-to-action a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+/* Background for the Services Page */
+.detailed-services {
+    background-image: url('https://ux.kathart.dk/images/svg/heart-wire.svg'); /* Background image */
+    background-color: #f2f2f2; /* Fallback background color */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    padding: 40px 0; /* Add padding around the content */
+}
+
+/* Background color for the services page */
+body {
+    background-color: #c9c0d3; /* Light grey background that complements header and footer */
+}
+
+/* Adjusted background for header and footer to ensure consistency */
+header, footer {
+    background-color: #365e87; /* Dark color for contrast */
+    color: rgb(228, 176, 176);
+}
+
+/* Additional styling for sections to fit the new background */
+.detailed-services {
+    padding: 40px 0;
+    background-color: #b7abab; /* White background for services section to stand out */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the services container */
+    border-radius: 8px;
+}
+
+
+
+
+
+/* about us page */
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #a49898; /* Light background color */
+}
+
+/* About Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 80px 20px; /* Padding for top and bottom */
+    background-color: #415468; /* Background color */
+    color: white; /* Text color */
+    position: relative; /* For positioning elements */
+}
+
+.about-hero h1 {
+    font-size: 4rem; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.about-hero hr {
+    width: 60px; /* Width of the line */
+    height: 5px; /* Height of the line */
+    background-color: white; /* Color of the line */
+    border: none; /* Remove border */
+    margin: 20px auto; /* Center the line */
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    background: white; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background-color: #ced1d4;
+}
+
+/* Meet Our Team */
+.meet-our-team {
+    text-align: center;
+}
+
+.meet-our-team h2 {
+    font-size: 2.5rem; /* Font size for team section heading */
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    margin: 10px;
+    width: 200px; /* Fixed width for team members */
+    text-align: center; /* Center text */
+}
+
+.team-member img {
+    width: 100%; /* Full width for images */
+    border-radius: 50%; /* Circular images */
+    border: 4px solid #007bff; /* Blue border for images */
+}
+
+/* Our Mission and Values */
+.our-mission, .our-values {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem; /* Font size for section headings */
+    margin-bottom: 20px;
+}
+
+.our-values ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+}
+
+.our-values li {
+    font-size: 1.5rem; /* Font size for list items */
+    margin: 10px 0; /* Space between items */
+}
+
+
+
+
+
+
+/* Contact Us page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.contact_us_section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-form-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 40px;
+}
+.form-section, .contact-info-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.form-section {
+    flex: 1;
+}
+.contact-info-section {
+    flex: 0.7;
+}
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+p {
+    color: #666;
+}
+.form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.field-group {
+    flex: 1;
+}
+.field-group.full-width {
+    flex-basis: 100%;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+textarea {
+    resize: none;
+    height: 150px;
+}
+.submit-btn {
+    padding: 12px 30px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.info-item img {
+    width: 30px;
+    margin-right: 15px;
+}
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    margin-right: 15px;
+}
+.social-links img {
+    width: 30px;
+}
+
+
+/* Blog Page - Unique Hero Section */
+/* nav bar*/
+
+/* Navigation Bar Styles */
+.logo {
+    display: flex; /* Use flexbox to align logo and title */
+    align-items: center; /* Vertically center items */
+}
+
+.logo img {
+    margin-right: 10px; /* Adds space between logo and title */
+}
+
+.nav-title {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: rgb(239, 238, 238); /* Font color for the title */
+}
+
+.logo img {
+    max-width: 60px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* News Feed Section */
+.news-feed {
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Light background for contrast */
+}
+
+.news-feed h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.news-article {
+    background-color: #ffffff; /* White background for articles */
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.news-article h3 {
+    font-size: 1.5em;
+}
+
+.news-article a {
+    color: #2980b9; /* Link color */
+    text-decoration: underline;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50; /* Background color for footer */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+}
+
+footer .social-links {
+    margin: 20px 0; /* Margin around social links */
+}
+
+footer .social-links a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Size of icons */
+    text-decoration: none; /* Remove underline */
+}
+
+footer .social-links a:hover {
+    color: #2980b9; /* Change color on hover */
+}
+
+footer nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+footer nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between links */
+}

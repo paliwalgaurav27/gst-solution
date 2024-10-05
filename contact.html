@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Collect form data
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const phoneNumber = document.getElementById('phone-number').value;
+            const query = document.getElementById('query').value;
+
+            // WhatsApp number (replace with your actual WhatsApp number)
+            const whatsappNumber = "+918791291596"; // Your WhatsApp number
+            const message = `*New Contact Request*\n\n` +
+                            `*First Name:* ${firstName}\n` +
+                            `*Last Name:* ${lastName}\n` +
+                            `*Email:* ${email}\n` +
+                            `*Phone Number:* ${phoneNumber}\n` +
+                            `*Query:* ${query}`;
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappLink, '_blank');
+        }
+    </script>
+</head>
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+            <span class="nav-title">GST SOLUTION</span> 
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <!-- Contact Us Section -->
+    <div class="contact_us_section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-section">
+                    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+                        <div class="form-header">
+                            <h2>Contact Us</h2>
+                            <p>Feel free to reach out to us with any questions, suggestions, or concerns.</p>
+                        </div>
+                        <div class="form-fields">
+                            <div class="field-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="FirstName" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="LastName" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="Email" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" id="phone-number" name="PhoneNumber" required>
+                            </div>
+                            <div class="field-group full-width">
+                                <label for="query">What Do You Have in Mind?</label>
+                                <textarea id="query" name="Query" placeholder="Please enter your query..." required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+        
+                <!-- Contact Information Section -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    <p>If you have any questions, you can contact us at the following:</p>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg" alt="Phone Icon">
+                            <p>+1258 3258 5679</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg" alt="Email Icon">
+                            <p>hello@workik.com</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg" alt="Address Icon">
+                            <p>GST SOLUTIONS (All In One), Parth Plaza, SUBHASH CHOWK, Ranikhet, Uttarakhand 263645</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="gp253056@gmail.com"><img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" alt="Mail Icon"></a>
+                        <a href="https://in.linkedin.com/in/cma-sunder-prakash-budkoti-69a14326?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Icon" style="width: 24px; height: 24px;">
+                        </a>            
+                        <a href="https://www.instagram.com/fcma_sunder_p.budkoti?igsh=anM5bzZrazlqbzJp"><img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" alt="Instagram Icon"></a>
+                        <a href="https://m.facebook.com/profile.php?id=100063596726670"><img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" alt="Facebook Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Footer Section -->
+<footer>
+    <p>© 2024 GST SOLUTION . All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://m.facebook.com/profile.php?id=100063596726670" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://m.facebook.com/profile.php?id=100063596726670" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://in.linkedin.com/in/cma-sunder-prakash-budkoti-69a14326?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/fcma_sunder_p.budkoti?igsh=anM5bzZrazlqbzJp" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  <p>Designed and created by -Gaurav Paliwal</p>
+</footer>
+
+</body>
+</html>
