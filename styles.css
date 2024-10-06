@@ -168,23 +168,18 @@ nav {
     flex-wrap: wrap; /* Wrap on smaller screens */
 }
 
-.service-card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    #intro-section h1 {
+        font-size: 2.5rem; /* Slightly smaller heading for mobile */
+    }
+
+    #intro-section p {
+        font-size: 1.1rem; /* Adjust paragraph font size for mobile */
+    }
 }
 
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
 
-.service-card p {
-    font-size: 1rem;
-}
 /* Container for the services button */
 .services-button-container {
     text-align: center; /* Centers the button within the container */
@@ -637,7 +632,148 @@ h2 {
     margin: 10px 0; /* Space between items */
 }
 
-
+/* General Section Styles */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .client-section h1,
+  .why-choose-section h1,
+  .taxation-services-section h1,
+  .audit-assurance-section h1,
+  .costing-services-section h1,
+  .dgft-section h1,
+  .startup-services-section h1,
+  .trai-section h1,
+  .bpo-services-section h1,
+  .management-consultancy-section h1,
+  .inventory-verification-section h1,
+  .clients-section h1 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  /* Specific Section Styles */
+  .taxation-services-section p::before {
+    content: '• ';
+    font-weight: bold;
+  }
+  
+  .audit-assurance-section p::before,
+  .costing-services-section p::before,
+  .dgft-section p::before {
+    content: '• ';
+    font-weight: bold;
+  }
+  
+  /* List Styling */
+  section p {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  
+  /* Typography */
+  h1 {
+    color: #3a3a3a;
+  }
+  
+  p {
+    color: #5c5c5c;
+  }
+  
+  /* Highlighting Important Text */
+  section p strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+/* General Section Styles with Outline */
+section {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1200px;
+    background-color: #fdfdfd; /* A slightly lighter background */
+    border-radius: 12px; /* Rounded corners */
+    border: 2px solid #e0e0e0; /* Light gray border for outline */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  /* Hover Effect for Sections */
+  section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #007bff; /* Emphasis on headings */
+    padding-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Specific Section Styles (Borders) */
+  .client-section h1,
+  .why-choose-section h1,
+  .taxation-services-section h1,
+  .audit-assurance-section h1,
+  .costing-services-section h1,
+  .dgft-section h1,
+  .startup-services-section h1,
+  .trai-section h1,
+  .bpo-services-section h1,
+  .management-consultancy-section h1,
+  .inventory-verification-section h1,
+  .clients-section h1 {
+    padding-bottom: 12px;
+  }
+  
+  /* Typography Enhancements */
+  h1 {
+    color: #333; /* Darker color for headings */
+  }
+  
+  p {
+    color: #5c5c5c; /* Softer gray for body text */
+  }
+  
+  strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
 
 
 
@@ -740,6 +876,35 @@ textarea {
     width: 30px;
     margin-right: 15px;
 }
+
+/* Style for the offices section */
+.offices-section {
+    display: flex;
+    justify-content: space-between; /* This ensures the sections are spaced out */
+    align-items: flex-start; /* Align the items at the top */
+    padding: 20px; /* Optional padding for spacing */
+    gap: 20px; /* Adds space between the two sections */
+}
+
+/* Style for individual office blocks */
+.office {
+    width: 45%; /* Adjust the width to take up less space on large screens */
+}
+
+/* Additional styling for mobile responsiveness */
+@media (max-width: 768px) {
+    .offices-section {
+        flex-direction: column; /* Stack the sections on top of each other on smaller screens */
+        align-items: center;
+    }
+
+    .office {
+        width: 100%; /* Make each office block take full width on smaller screens */
+        text-align: center; /* Center the text on smaller screens */
+    }
+}
+
+
 .social-links {
     margin-top: 20px;
 }
@@ -855,3 +1020,12 @@ footer nav ul li {
     display: inline; /* Display list items inline */
     margin: 0 15px; /* Space between links */
 }
+
+
+
+
+
+
+
+
+
